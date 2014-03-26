@@ -14,7 +14,7 @@
     <a id="mobile-menu" href="#menu" class="mobile mobile-button menu"><i class="icon-menu"></i><span>{{i18n "Menu"}}</span></a>
 
 <ul class="nav site-nav desktop">
-	<li>Stories</li>
+	<li><a href="#">Stories</a></li>
 </ul>
 
 

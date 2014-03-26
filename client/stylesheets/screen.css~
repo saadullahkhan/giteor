@@ -2100,7 +2100,7 @@ color: #b3c1c6;
 
 .post-content .post-upvote .upvote-link,
 .post-content .post-upvote .upvote-link.not-voted:hover{
-margin-left:-20px;
+margin-left:-16px;
 border:none;
 background:none;
 }
@@ -2127,6 +2127,12 @@ clear:left;
 font-size:13px;
 line-height:25px;
 padding-left:0;
+}
+
+.posts .nav > li:first-child {
+padding-bottom:15px;
+margin-bottom:15px;
+border-bottom:1px solid #e7eff2;
 }
 
 .submit.button{
