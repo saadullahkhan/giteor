@@ -2079,3 +2079,30 @@ left:-163px;
 width:auto;
 }
 
+.post-content{
+margin-right:0;
+margin-bottom:0;
+}
+
+.post-content .post-rank{
+
+right: 10px;
+left:auto;
+line-height: 40px;
+font-size: 10px;
+color: #b3c1c6;
+}
+
+.post-content .post-upvote .upvote-link{
+margin-left:-20px;
+border:none;
+}
+
+.post-content .post-upvote .upvote-link i{
+font-size:200%;
+}
+
+.post-content .post-heading .post-title{
+font-size:14px;
+font-weight:bold;
+}

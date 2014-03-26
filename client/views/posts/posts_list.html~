@@ -1,0 +1,27 @@
+<template name="posts_list">
+
+{{#if canView}}
+
+
+
+          <ul role="menu" aria-labelledby="dLabel">
+            <li><a class="top" href="/top">{{"Top"}}</a></li>
+            <li><a class="new" href="/new">{{"New"}}</a></li>
+            <li><a class="best" href="/best">{{"Best"}}</a></li>
+            <li><a class="digest" href="/digest">{{"Digest"}}</a></li>
+          </ul>
+
+
+      {{/if}}
+
+	<div class="posts grid list">
+		{{#each posts}}
+			{{> post_item}}
+		{{/each}}
+	</div>
+  {{#if hasMorePosts}}
+  	<div class="grid more-button">
+  		<a class="more-link" href="{{loadMoreUrl}}">{{i18n "Load more"}}</a>
+  	</div>
+  {{/if}}
+</template>

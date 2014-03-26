@@ -1,5 +1,7 @@
 <template name="nav">
   <header class="header">
+
+	<div class="grid">
     {{#if logo_url}}
       <h1 class="logo image" style="height:{{logo_height}}px; width:{{logo_width}}px; top:{{logo_top}}px; margin-left:{{logo_offset}}px;">
         <a href="/">
@@ -9,23 +11,9 @@
     {{else}}
       <h1 class="logo"><a href="/">{{site_title}}</a></h1>
     {{/if}}
-	<div class="grid">
     <a id="mobile-menu" href="#menu" class="mobile mobile-button menu"><i class="icon-menu"></i><span>{{i18n "Menu"}}</span></a>
 
     <ul class="nav site-nav desktop">
-      {{#if canView}}
-      <li class="dropdown">
-        <a class="View" href="/">{{i18n "View"}}</a>
-        <div class="dropdown-menu">
-          <ul role="menu" aria-labelledby="dLabel">
-            <li><a class="top" href="/top">{{i18n "Top"}}</a></li>
-            <li><a class="new" href="/new">{{i18n "New"}}</a></li>
-            <li><a class="best" href="/best">{{i18n "Best"}}</a></li>
-            <li><a class="digest" href="/digest">{{i18n "Digest"}}</a></li>
-          </ul>
-        </div>
-      </li>
-      {{/if}}
       {{#if hasCategories}}
       <li class="dropdown">
         <a class="categories" href="/">{{i18n "Categories"}}</a>
