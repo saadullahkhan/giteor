@@ -1,7 +1,5 @@
 <template name="nav">
   <header class="header">
-
-	<div class="grid">
     {{#if logo_url}}
       <h1 class="logo image" style="height:{{logo_height}}px; width:{{logo_width}}px; top:{{logo_top}}px; margin-left:{{logo_offset}}px;">
         <a href="/">
@@ -11,6 +9,7 @@
     {{else}}
       <h1 class="logo"><a href="/">{{site_title}}</a></h1>
     {{/if}}
+	<div class="grid">
     <a id="mobile-menu" href="#menu" class="mobile mobile-button menu"><i class="icon-menu"></i><span>{{i18n "Menu"}}</span></a>
 
     <ul class="nav site-nav desktop">

@@ -2057,21 +2057,20 @@ border-radius:0px;
 box-shadow: none;
 }
 
-.header{
+.grid {
 width:620px;
-margin:auto;
+margin:0 auto;
 }
 
-.posts{
-width:620px;
-margin:auto;
-background:#fff;
+header .grid{
+background:#2d72d9;
+height:70px;
+position:relative;
 }
 
-.posts .post{
-border-bottom:1px solid #e7eff2;
+header .grid .logo,
+header .grid .logo.image{
+left:-163px;
+width:auto;
 }
 
-.post-content .post-upvote .upvote-link{
-border-right:none;
-}
