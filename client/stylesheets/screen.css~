@@ -169,7 +169,7 @@ body {
 
 /* line 1, ../sass/partials/_typography.scss */
 body, textarea, input, button, input[type="submit"], input[type="button"] {
-  font-family: "Open Sans", "Proxima Nova Soft", "proxima-nova-soft", "PT SANS", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Whitney SSm A","Whitney SSm B","Helvetica Neue",Helvetica,Arial,Sans-Serif;
   color: #4a4444;
   line-height: 1.6; }
 
@@ -1517,7 +1517,8 @@ form input[type="text"], form input[type="password"], form textarea, form .login
   /* Firefox, other Gecko */
   box-sizing: border-box;
   /* Opera/IE 8+ */
-  border: 1px solid #b5b0b0;
+
+  /*border: 1px solid #b5b0b0;*/
   -webkit-transition: border-color 500ms;
   -moz-transition: border-color 500ms;
   -o-transition: border-color 500ms;
@@ -2089,9 +2090,16 @@ margin-right:0;
 margin-bottom:0;
 }
 
+.post-content .post-info {
+padding: 13px 0px;
+margin-left: 40px;
+border-bottom: 1px solid #e7eff2;
+margin-right: 40px;
+}
+
 .post-content .post-rank{
 
-right: 10px;
+right: 40px;
 left:auto;
 line-height: 40px;
 font-size: 10px;
@@ -2122,6 +2130,10 @@ position:absolute;
 left:-150px;
 }
 
+.post-message{
+	padding: 20px 40px;
+}
+
 .posts .nav li{
 clear:left;
 font-size:13px;
@@ -2130,9 +2142,9 @@ padding-left:0;
 }
 
 .posts .nav > li:first-child {
-padding-bottom:15px;
-margin-bottom:15px;
-border-bottom:1px solid #e7eff2;
+padding-bottom:10px;
+margin-bottom:10px;
+border-bottom:1px solid #ddd;
 }
 
 .submit.button{
@@ -2145,4 +2157,36 @@ margin-top:3px;
 .search.empty .search-field{
 background:white;
 margin-top:10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+padding: 10px 15px;
+margin-bottom: 0;
+background: #FFF;
+border: 1px solid #ddd;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.1) inset;
+-moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.1) inset;
+-o-box-shadow: 1px 1px 1px rgba(0,0,0,0.1) inset;
+box-shadow: 1px 1px 1px rgba(0,0,0,0.1) inset;
+-webkit-transition: all 200ms ease;
+-moz-transition: all 200ms ease;
+-ms-transition: all 200ms ease;
+-o-transition: all 200ms ease;
+transition: all 200ms ease;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-font-smoothing: antialiased;
+}
+
+form input[type="text"]:focus, form input[type="password"]:focus, form textarea:focus, form .login-form input:focus, .accounts-dialog input[type="text"]:focus, .accounts-dialog input[type="password"]:focus, .accounts-dialog textarea:focus, .accounts-dialog .login-form input:focus{
+outline: none;
+border: 1px solid #c3c9d2;
+-webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.05) inset;
+-moz-box-shadow: 0 2px 2px rgba(0,0,0,0.05) inset;
+-o-box-shadow: 0 2px 2px rgba(0,0,0,0.05) inset;
+box-shadow: 0 2px 2px rgba(0,0,0,0.05) inset;
 }
