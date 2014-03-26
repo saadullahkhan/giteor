@@ -948,7 +948,7 @@ body.pageslide-open {
         background: #4e555d url("/img/bg-header.png") top center; }
         /* line 80, ../sass/modules/_posts.scss */
         .post-content .post-upvote .upvote-link.not-voted:hover i {
-          color: white;
+          /*color: white;*/
           text-shadow: none; }
       /* line 85, ../sass/modules/_posts.scss */
       .post-content .post-upvote .upvote-link.voted {
@@ -2098,14 +2098,19 @@ font-size: 10px;
 color: #b3c1c6;
 }
 
-.post-content .post-upvote .upvote-link{
+.post-content .post-upvote .upvote-link,
+.post-content .post-upvote .upvote-link.not-voted:hover{
 margin-left:-20px;
 border:none;
+background:none;
 }
 
-.post-content .post-upvote .upvote-link i{
+.post-content .post-upvote .upvote-link i,
+.post-content .post-upvote .upvote-link.not-voted:hover i{
 font-size:200%;
 }
+
+
 
 .post-content .post-heading .post-title{
 font-size:14px;
