@@ -2040,3 +2040,42 @@ table {
         /* line 222, ../sass/partials/_mobile.scss */
         .post .post-actions li a .action {
           display: none; } }
+
+
+/*by SK*/
+
+.grid-block,
+.post-content,
+.post-actions li a,
+.post-message,
+.comment-content,
+.comment-new,
+.error{
+border-radius:0px;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+}
+
+.header{
+width:620px;
+margin:auto;
+}
+
+.posts{
+width:620px;
+margin:auto;
+background:#fff;
+}
+
+.posts .post{
+border-bottom:1px solid #e7eff2;
+}
+
+.post-actions{
+padding:13px 15px;
+}
+
+.post-content .post-upvote .upvote-link{
+border-right:none;
+}
