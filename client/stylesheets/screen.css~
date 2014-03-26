@@ -2057,6 +2057,10 @@ border-radius:0px;
 box-shadow: none;
 }
 
+.header{
+margin-bottom:0;
+}
+
 .grid {
 width:620px;
 margin:0 auto;
@@ -2129,4 +2133,5 @@ margin-top:3px;
 
 .search.empty .search-field{
 background:white;
+margin-top:10px;
 }
