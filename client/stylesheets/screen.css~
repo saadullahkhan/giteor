@@ -2060,6 +2060,7 @@ box-shadow: none;
 .grid {
 width:620px;
 margin:0 auto;
+position:relative;
 }
 
 .grid-small{
@@ -2070,7 +2071,7 @@ padding:20px;
 header .grid{
 background:#2d72d9;
 height:70px;
-position:relative;
+
 }
 
 header .grid .logo,
@@ -2100,4 +2101,20 @@ border:none;
 
 .post-content .post-upvote .upvote-link i{
 font-size:200%;
+}
+
+.post-content .post-heading .post-title{
+font-size:14px;
+font-weight:bold;
+}
+
+.posts .nav{
+position:absolute;
+left:-150px;
+}
+
+.posts .nav li{
+clear:left;
+font-size:13px;
+line-height:25px;
 }
