@@ -2119,3 +2119,15 @@ font-size:13px;
 line-height:25px;
 padding-left:0;
 }
+
+.submit.button{
+line-height:20px;
+font-size:12px;
+height:20px;
+margin-top:3px;
+}
+
+.search.empty .search-field{
+background:white;
+margin-top:10px;
+}
