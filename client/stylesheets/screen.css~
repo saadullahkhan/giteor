@@ -2125,26 +2125,37 @@ font-size:14px;
 font-weight:bold;
 }
 
-.posts .nav{
+.settings, .admin, .user-table{ position: relative;}
+
+.posts .nav,
+.settings .nav,
+.admin .nav,
+.user-table .nav li{
 position:absolute;
 left:-150px;
 }
 
-.post-message{
-	padding: 20px 40px;
-}
-
-.posts .nav li{
+.posts .nav li,
+.settings .nav li,
+.admin .nav li,
+.user-table .nav li{
 clear:left;
 font-size:13px;
 line-height:25px;
 padding-left:0;
 }
 
-.posts .nav > li:first-child {
+.posts .nav > li:first-child,
+.settings .nav > li:first-child,
+.admin .nav > li:first-child,
+.user-table .nav > li:first-child  {
 padding-bottom:10px;
 margin-bottom:10px;
 border-bottom:1px solid #ddd;
+}
+
+.post-message{
+	padding: 20px 40px;
 }
 
 .submit.button{

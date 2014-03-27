@@ -1,8 +1,6 @@
 <template name="users">
     <div class="grid">
-      <div class="user-table grid-block">
-      
-      <ul class="nav site-nav desktop">
+    <ul class="nav site-nav desktop">
       {{#if canView}}
       <li>
           <ul role="menu" aria-labelledby="dLabel">
@@ -44,6 +42,7 @@
         {{> search}}
       </li>
     </ul>
+      <div class="user-table grid-block">
         <h2>{{i18n "Users"}}</h2>
         <div class="filter-sort">
           <p class="filter">
