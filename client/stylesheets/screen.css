@@ -2158,11 +2158,22 @@ border-bottom:1px solid #ddd;
 	padding: 20px 40px;
 }
 
-.submit.button{
-line-height:20px;
-font-size:12px;
-height:20px;
-margin-top:3px;
+.submit.button,
+input[type="submit"], button, .button, .auth-buttons #login-buttons #login-buttons-password, .btn{
+padding: 6px 15px 10px 15px;
+margin-bottom: 0;
+border: 0;
+color: #FFF;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+font: 700 14px "Whitney SSm A","Whitney SSm B","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-font-smoothing: antialiased;
+cursor: pointer;
+
 }
 
 .search.empty .search-field{
