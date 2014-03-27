@@ -2,7 +2,7 @@ html { padding:0px 0px 20px 0px; }
 
 body {
 	padding: 10px 15px;
-margin-bottom: 0;
+
 background: #FFF;
 border: 1px solid #ddd;
 -webkit-border-radius: 3px;
@@ -21,6 +21,7 @@ transition: all 200ms ease;
 -moz-box-sizing: border-box;
 box-sizing: border-box;
 -webkit-font-smoothing: antialiased;
+margin:0;
 
 }
 body:focus{

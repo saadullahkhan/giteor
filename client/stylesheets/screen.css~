@@ -908,9 +908,7 @@ body.pageslide-open {
     color: rgba(0, 0, 0, 0.1); }
   /* line 45, ../sass/modules/_posts.scss */
   .post-content .post-upvote {
-    position: absolute;
-    top: 0px;
-    bottom: 0px; }
+     }
     /* line 49, ../sass/modules/_posts.scss */
     .post-content .post-upvote .upvote-link {
       height: 100%;
@@ -922,7 +920,7 @@ body.pageslide-open {
       -ms-border-radius: 3px 0 0 3px;
       -o-border-radius: 3px 0 0 3px;
       border-radius: 3px 0 0 3px;
-      border-right: 1px solid #e7eff2; }
+     /* border-right: 1px solid #e7eff2;*/ }
       /* line 59, ../sass/modules/_posts.scss */
       .post-content .post-upvote .upvote-link i {
         font-size: 12px;
@@ -938,14 +936,13 @@ body.pageslide-open {
         .post-content .post-upvote .upvote-link i.icon-check {
           display: none; }
       /* line 74, ../sass/modules/_posts.scss */
-      .post-content .post-upvote .upvote-link span {
-        display: none; }
+      .post-content .post-upvote .upvote-link span { }
       /* line 77, ../sass/modules/_posts.scss */
       .post-content .post-upvote .upvote-link.not-voted:hover {
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
-        background: #4e555d url("/img/bg-header.png") top center; }
+        /*background: #4e555d url("/img/bg-header.png") top center; */}
         /* line 80, ../sass/modules/_posts.scss */
         .post-content .post-upvote .upvote-link.not-voted:hover i {
           /*color: white;*/
@@ -2106,20 +2103,6 @@ font-size: 10px;
 color: #b3c1c6;
 }
 
-.post-content .post-upvote .upvote-link,
-.post-content .post-upvote .upvote-link.not-voted:hover{
-margin-left:-16px;
-border:none;
-background:none;
-}
-
-.post-content .post-upvote .upvote-link i,
-.post-content .post-upvote .upvote-link.not-voted:hover i{
-font-size:200%;
-}
-
-
-
 .post-content .post-heading .post-title{
 font-size:14px;
 font-weight:bold;
@@ -2160,7 +2143,7 @@ border-bottom:1px solid #ddd;
 
 .submit.button,
 input[type="submit"], button, .button, .auth-buttons #login-buttons #login-buttons-password, .btn{
-padding: 6px 15px 10px 15px;
+padding: 5px 15px 10px 15px;
 margin-bottom: 0;
 border: 0;
 color: #FFF;
@@ -2213,6 +2196,15 @@ border: 1px solid #c3c9d2;
 box-shadow: 0 2px 2px rgba(0,0,0,0.05) inset;
 }
 
+form .control-group .controls .inline-link, .accounts-dialog .control-group .controls .inline-link{
+	top: 6px;
+	font-size: 12px;
+}
+
 .markdown p{
 	font-size: 14px;
 	}
+	
+	.post-content .post-upvote .upvote-link, .post-content .post-upvote .upvote-link.not-voted:hover{margin-left: 0;}
+	
+	.post-content .post-upvote .upvote-link{height: auto; display: inherit;float: none;}
