@@ -2162,7 +2162,6 @@ border-bottom:1px solid #ddd;
 input[type="submit"], button, .button, .auth-buttons #login-buttons #login-buttons-password, .btn{
 padding: 6px 15px 10px 15px;
 margin-bottom: 0;
-background: #121821;
 border: 0;
 color: #FFF;
 -webkit-border-radius: 3px;
