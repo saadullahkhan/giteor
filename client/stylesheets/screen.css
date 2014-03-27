@@ -2160,7 +2160,7 @@ border-bottom:1px solid #ddd;
 
 .submit.button,
 input[type="submit"], button, .button, .auth-buttons #login-buttons #login-buttons-password, .btn{
-padding: 6px 15px 10px 15px;
+padding: 5px 15px 10px 15px;
 margin-bottom: 0;
 border: 0;
 color: #FFF;

@@ -2212,3 +2212,7 @@ border: 1px solid #c3c9d2;
 -o-box-shadow: 0 2px 2px rgba(0,0,0,0.05) inset;
 box-shadow: 0 2px 2px rgba(0,0,0,0.05) inset;
 }
+
+.markdown p{
+	font-size: 14px;
+	}
