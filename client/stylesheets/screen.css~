@@ -981,7 +981,7 @@ body.pageslide-open {
       line-height: 1; }
       /* line 117, ../sass/modules/_posts.scss */
       .post-content .post-heading .post-title:visited {
-        color: #b5b0b0; }
+        color: #121821; }
       /* line 120, ../sass/modules/_posts.scss */
       .post-content .post-heading .post-title:hover {
         color: #f36c3d; }
@@ -2208,3 +2208,4 @@ form .control-group .controls .inline-link, .accounts-dialog .control-group .con
 	.post-content .post-upvote .upvote-link, .post-content .post-upvote .upvote-link.not-voted:hover{margin-left: 0;}
 	
 	.post-content .post-upvote .upvote-link{height: auto; display: inherit;float: none;}
+	.auth-buttons #login-buttons a.login-link-text{ font-size: 14px}
