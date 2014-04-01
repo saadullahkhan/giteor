@@ -31,7 +31,6 @@
       {{> nav}}
       {{> error}}
       {{yield}}
-      <!--{{> notifications}}-->
       {{> footer}}
       <div class="overlay hidden"></div>
     </div>
