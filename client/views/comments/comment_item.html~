@@ -9,16 +9,6 @@
           <div class="comment-meta">
             <a class="comment-username" href="{{profileUrl}}">{{authorName}}</a>
             <span class="comment-time">{{ago}},</span>
-            <div class="comment-actions {{#if upvoted}}upvoted{{else}}not-upvoted{{/if}} {{#if downvoted}}downvoted{{else}}not-downvoted{{/if}}">
-          <a class="upvote" href="#">
-            
-            <span>{{i18n "upvote"}}</span>
-          </a>
-          <a class="downvote" href="#">
-            
-            <span>{{i18n "downvote"}}</span>
-          </a>
-        </div>
             <span class="points">{{votes}} <span class="unit">points </span>
             <a href="/comments/{{_id}}" class="comment-permalink icon-link goto-comment">{{i18n "link"}}</a>
             {{#if can_edit}}

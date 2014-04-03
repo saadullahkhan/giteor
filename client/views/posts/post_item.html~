@@ -7,7 +7,7 @@
       
       <div class="post-info">
         {{#if sticky}}
-          <span class="post-sticky"><i class="icon-pin"></i><span>{{i18n "Sticky"}}</span></span>
+          <span class="post-sticky"><span>{{i18n "Sticky"}}</span></span>
         {{/if}}
         <h3 class="post-heading">
           <a href="{{postLink}}" class="post-title" target="{{postTarget}}">{{headline}}</a>
@@ -34,7 +34,7 @@
           {{/if}}
         </p>
       </div>
-{{#if oneBasedRank}}<span class="post-rank">{{oneBasedRank}}</span>{{/if}}
+
     </div>
     {{#if body}}
       <div class="post-message markdown">{{{body_formatted}}}</div>

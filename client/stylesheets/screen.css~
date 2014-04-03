@@ -816,7 +816,7 @@ body.pageslide-open {
       font-size: 16px;
       line-height: 26px;
       height: 26px;
-      font-weight: normal; }
+      }
       /* line 148, ../sass/modules/_header.scss */
       .nav > li > a.intercom em:before {
         content: '('; }
@@ -1727,6 +1727,7 @@ table {
 /* line 1, ../sass/modules/_errors.scss */
 .error {
   margin-bottom: 10px;
+  margin-top: 10px;
   text-align: center;
   background: #f36c3d;
   color: white; }
@@ -1952,7 +1953,7 @@ table {
           /* line 127, ../sass/partials/_mobile.scss */
           .header .auth-buttons .login-link-and-dropdown-list .login-link-text:after {
             content: "\75" !important;
-            font-family: 'icomoon' !important;
+            font-family: "Whitney SSm A","Whitney SSm B","Georgia","Times New Roman",Serif' !important;
             position: absolute;
             width: 100%;
             text-align: center;
@@ -2090,7 +2091,7 @@ margin-bottom:0;
 .post-content .post-info {
 padding: 13px 0px;
 margin-left: 40px;
-border-bottom: 1px solid #e7eff2;
+border-top: 1px solid #e7eff2;
 margin-right: 40px;
 }
 
@@ -2209,3 +2210,39 @@ form .control-group .controls .inline-link, .accounts-dialog .control-group .con
 	
 	.post-content .post-upvote .upvote-link{height: auto; display: inherit;float: none;}
 	.auth-buttons #login-buttons a.login-link-text{ font-size: 14px}
+	form.form-block, .accounts-dialog.form-block{background-color: #f1f1f1 }
+	h3{ color: #1c52a2;}
+.accounts-dialog{
+	box-shadow:none !important;
+	border-radius:10px !important;
+	border-color: #ccc !important;
+	}
+.filter-sort {background: rgba(0, 0, 0, 0.075); margin: 30px 0}
+	.filter-sort .sort{float: left;}
+	.grid.more-button{padding: 0;} 	
+	.more-button a{width: 95%; margin: 30px 0;}
+	.posts.grid.list{background: white;}
+	.post.sticky .post-content{
+		padding:30px;
+		background: none;
+		}
+		
+		.post.sticky .post-content .post-info{ padding:40px 0; border:0;}
+		
+		.post.sticky .post-heading .post-title{font-size: 26px; font-weight: normal;}
+
+	.single-post{background: white}
+	.single-post .sticky .post-message {padding: 20px 30px}
+	.single-post .post.sticky .post-content .post-info{ margin: 0;}
+	ul.comment-list{padding: 30px}
+	.comment-actions{position: relative;}
+	.comment-actions a {
+border-radius: none;
+position: relative;
+display: block;
+color: black;
+box-shadow: none;
+overflow: hidden;
+text-indent: 0;
+white-space: nowrap;
+}

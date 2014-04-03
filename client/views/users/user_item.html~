@@ -22,7 +22,7 @@
 		<p>({{inviteCount}} {{i18n "invites left"}})</p>
 	</td>
 	<td>{{#if isInvited}}<i class="icon-check"></i>{{/if}}</td>
-	
+	<td>{{#if userIsAdmin}}<i class="icon-check"></i>{{/if}}</td>
 	<td>
 		<ul>
 			<li>{{#if isInvited}}<a class="uninvite-link" href="#">{{i18n "Uninvite"}}</a>{{else}}<a href="#" class="invite-link">{{i18n "Invite"}}</a>{{/if}}</li>
