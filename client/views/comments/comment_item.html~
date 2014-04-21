@@ -7,10 +7,12 @@
         {{/constant}}
         <div class="comment-main">
           <div class="comment-meta">
+          
             <a class="comment-username" href="{{profileUrl}}">{{authorName}}</a>
             <span class="comment-time">{{ago}},</span>
+            
             <span class="points">{{votes}} <span class="unit">points </span>
-            <a href="/comments/{{_id}}" class="comment-permalink icon-link goto-comment">{{i18n "link"}}</a>
+            
             {{#if can_edit}}
               | <a class="edit-link" href="/comments/{{_id}}/edit">{{i18n "Edit"}}</a>
             {{/if}}
@@ -22,6 +24,18 @@
           {{#if getSetting "nestedComments" true}}
             <a href="/comments/{{_id}}/reply" class="comment-reply goto-comment">{{i18n "Reply"}}</a>
           {{/if}}
+          <div class="comment-actions {{#if upvoted}}upvoted{{else}}not-upvoted{{/if}} {{#if downvoted}}downvoted{{else}}not-downvoted{{/if}}">
+          <a class="upvote" href="#">
+            
+            <span>{{i18n "upvote"}}</span>
+          </a>
+          <span>&bull;</span>
+          <a class="downvote" href="#">
+            
+            <span>{{i18n "downvote"}}</span>
+          </a>
+          &nbsp;-&nbsp;
+        </div>
         </div>
       </div>
       {{#if showChildComments}}

@@ -6,6 +6,6 @@
       {{/each}}
     </ul>
   {{else}}
-    <p class="nocomments">{{i18n "No comments."}}</p>
+    <p>{{i18n "No comments."}}</p>
   {{/if}}
 </template>

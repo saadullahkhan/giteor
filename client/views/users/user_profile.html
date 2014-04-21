@@ -20,10 +20,7 @@
 					<td>{{i18n "Member since"}}:</td>
 					<td>{{createdAtFormatted}}</td>
 				</tr>
-				<tr>
-					<td>{{i18n "Bio:"}}</td>
-					<td>{{profile.bio}}</td>
-				</tr>
+
 				{{#if getTwitterName}}
 					<tr>
 						<td>Twitter: </td>
@@ -43,6 +40,7 @@
 					</tr>
 				{{/if}}					
 			</table>
+			<br>
 			{{#if canEditProfile}}
 				<a class="button inline" href="/users/{{slug}}/edit">{{i18n "Edit profile"}}</a>
 			{{/if}}

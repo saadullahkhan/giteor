@@ -20,10 +20,7 @@
 					<td>{{i18n "Member since"}}:</td>
 					<td>{{createdAtFormatted}}</td>
 				</tr>
-				<tr>
-					<td>{{i18n "Bio:"}}</td>
-					<td>{{profile.bio}}</td>
-				</tr>
+
 				{{#if getTwitterName}}
 					<tr>
 						<td>Twitter: </td>
@@ -50,7 +47,7 @@
 				{{#if inviteCount}}
 					<a class="button inline invite-link" href="#">{{i18n "Invite"}} ({{inviteCount}} {{i18n "left"}})</a>
 				{{else}}
-					<a class="button inline" href="#">{{i18n "Invite (none left)"}}</a>
+					<a class="button inline disabled" href="#">{{i18n "Invite (none left)"}}</a>
 				{{/if}}
 			{{/if}}
 		</div>

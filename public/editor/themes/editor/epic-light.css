@@ -4,13 +4,7 @@ body {
 	padding: 10px 15px;
 font-family: "Whitney SSm A","Whitney SSm B","Georgia","Times New Roman",Serif;
 border: 1px solid #ddd;
--webkit-border-radius: 3px;
--moz-border-radius: 3px;
-border-radius: 3px;
--webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.1) inset;
--moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.1) inset;
--o-box-shadow: 1px 1px 1px rgba(0,0,0,0.1) inset;
-box-shadow: 1px 1px 1px rgba(0,0,0,0.1) inset;
+
 -webkit-transition: all 200ms ease;
 -moz-transition: all 200ms ease;
 -ms-transition: all 200ms ease;
@@ -25,4 +19,10 @@ margin:0;
 }
 body:focus{
 outline: none;
+border: 1px solid #c3c9d2;
+-webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.05) inset;
+-moz-box-shadow: 0 2px 2px rgba(0,0,0,0.05) inset;
+-o-box-shadow: 0 2px 2px rgba(0,0,0,0.05) inset;
+box-shadow: 0 2px 2px rgba(0,0,0,0.05) inset;
+}
 }

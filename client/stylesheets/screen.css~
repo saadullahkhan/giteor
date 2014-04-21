@@ -169,7 +169,7 @@ body {
 
 /* line 1, ../sass/partials/_typography.scss */
 body, textarea, input, button, input[type="submit"], input[type="button"] {
-  font-family: "Whitney SSm A","Whitney SSm B","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+  font-family: 'Source Sans Pro', sans-serif !important;
   color: #4a4444;
   line-height: 1.6; }
 
@@ -182,12 +182,14 @@ a {
     color: #a4a9ab; }
   /* line 15, ../sass/partials/_typography.scss */
   a:hover {
-    color: #f36c3d; }
+    color: #e44f32; }
 
 /* line 19, ../sass/partials/_typography.scss */
 h2 {
-  font-size: 36px;
-  margin-bottom: 10px; }
+  font:bold 40px Source Sans Pro;
+  margin-bottom: 10px;
+  color: #1f2122;
+  }
 
 /* line 23, ../sass/partials/_typography.scss */
 h3 {
@@ -754,7 +756,7 @@ body.pageslide-open {
       text-shadow: none;
       width: auto;
       line-height: 1.5;
-      height: 26px;
+      /*height: 26px;*/
       margin: 10px 0 !important; }
     /* line 110, ../sass/modules/_header.scss */
     .auth-buttons #login-buttons .login-header {
@@ -817,6 +819,8 @@ body.pageslide-open {
       line-height: 26px;
       height: 26px;
       }
+      
+      .nav > li > a#submit{line-height: 8px;} 
       /* line 148, ../sass/modules/_header.scss */
       .nav > li > a.intercom em:before {
         content: '('; }
@@ -892,7 +896,7 @@ body.pageslide-open {
   margin-right: 160px; }
   /* line 28, ../sass/modules/_posts.scss */
   .post-content .post-info {
-    padding: 13px 15px;
+    padding: 20px 15px;
     margin-left: 30px; }
   /* line 32, ../sass/modules/_posts.scss */
   .post-content .post-rank {
@@ -970,27 +974,28 @@ body.pageslide-open {
     /* line 106, ../sass/modules/_posts.scss */
     .post-content .post-sticky span {
       display: none; }
-  /* line 110, ../sass/modules/_posts.scss */
+
   .post-content .post-heading {
     margin-bottom: 0px; }
-    /* line 112, ../sass/modules/_posts.scss */
+
     .post-content .post-heading .post-title {
-      font-size: 20px;
-      color: #4a4444;
-      font-weight: normal;
+      font-size: 16px;
+      color: #262932;
+      font-weight: bold;
       line-height: 1; }
-      /* line 117, ../sass/modules/_posts.scss */
+
       .post-content .post-heading .post-title:visited {
-        color: #121821; }
-      /* line 120, ../sass/modules/_posts.scss */
+        color: #262932; }
+
       .post-content .post-heading .post-title:hover {
         color: #f36c3d; }
-    /* line 124, ../sass/modules/_posts.scss */
+
     .post-content .post-heading .post-domain {
       color: #b3c1c6;
       font-size: 14px;
       font-weight: normal; }
-    /* line 129, ../sass/modules/_posts.scss */
+
+    
     .post-content .post-heading .post-category {
       display: inline-block;
       font-size: 11px;
@@ -1000,30 +1005,54 @@ body.pageslide-open {
       -o-border-radius: 3px;
       border-radius: 3px;
       background: #eee;
-      padding: 0px 6px;
+      padding: 3px 5px;
+      line-height: normal;
       text-transform: uppercase;
       font-weight: normal;
-      vertical-align: middle; }
-      /* line 138, ../sass/modules/_posts.scss */
+      vertical-align: middle;
+      
+/*display: inline-block;
+font-size: 11px;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+-ms-border-radius: 50%;
+-o-border-radius: 50%;
+border-radius: 50%;
+background: #6EC5E9;
+padding: 0;
+line-height: normal;
+color: #fff;
+text-transform: uppercase;
+line-height: 50px;
+width: 50px;
+height: 50px;
+text-align: center;
+position: absolute;
+left: -26px;
+top: 20px;*/      
+      }
+      
+      
       .post-content .post-heading .post-category:hover {
         background: #f36c3d;
         color: white; }
-  /* line 144, ../sass/modules/_posts.scss */
+  
+  
   .post-content .post-meta {
     font-size: 13px;
     color: #b3c1c6;
     line-height: 1.5; }
 
-/* line 150, ../sass/modules/_posts.scss */
+
 .post-actions {
   float: right;
   padding: 0; }
-  /* line 153, ../sass/modules/_posts.scss */
+
   .post-actions li {
     position: relative;
     float: left;
     margin-left: 10px; }
-    /* line 157, ../sass/modules/_posts.scss */
+
     .post-actions li a {
       background: #d8e9f5;
       background: white;
@@ -1038,32 +1067,32 @@ body.pageslide-open {
       color: #b3c1c6;
       font-size: 36px;
       line-height: 50px; }
-      /* line 172, ../sass/modules/_posts.scss */
+
       .post-actions li a.edit-link {
         color: #f36c3d; }
-      /* line 175, ../sass/modules/_posts.scss */
+
       .post-actions li a.share-link {
         color: #7ac0e4;
         color: #f8e121; }
-      /* line 179, ../sass/modules/_posts.scss */
+
       .post-actions li a.discuss-link {
         color: #a3d06d; }
-      /* line 182, ../sass/modules/_posts.scss */
+
       .post-actions li a.more-link {
         color: #7ac0e4; }
-      /* line 185, ../sass/modules/_posts.scss */
+
       .post-actions li a:hover {
         background: #4e555d url("/img/bg-header.png") top center;
         color: white; }
-      /* line 189, ../sass/modules/_posts.scss */
+
       .post-actions li a.voted {
         background: #4e555d;
         color: white;
         cursor: default; }
-        /* line 193, ../sass/modules/_posts.scss */
+
         .post-actions li a.voted .action {
           color: #fff; }
-      /* line 197, ../sass/modules/_posts.scss */
+
       .post-actions li a .count {
         position: absolute;
         top: 12px;
@@ -1273,7 +1302,7 @@ body.pageslide-open {
   /* line 85, ../sass/modules/_comments.scss */
   .comment .comment-reply {
     display: inline-block;
-    margin-top: 10px; }
+    margin-top: 0px; }
 
 /* line 127, ../sass/modules/_comments.scss */
 .comment-content {
@@ -1424,14 +1453,9 @@ body.pageslide-open {
 
 /* line 2, ../sass/modules/_forms.scss */
 form.form-block, .accounts-dialog.form-block {
-  background: #e7eff2;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  padding: 10px; }
+  border: 1px solid #e4e6e8;
+  margin-bottom: 25px;
+  padding: 20px; }
 /* line 9, ../sass/modules/_forms.scss */
 form .control-group, .accounts-dialog .control-group {
   /* For modern browsers */
@@ -1503,30 +1527,31 @@ form .form-actions, .accounts-dialog .form-actions {
     float: left;
     display: block; }
 /* line 59, ../sass/modules/_forms.scss */
-form input[type="text"], form input[type="password"], form textarea, form .login-form input, .accounts-dialog input[type="text"], .accounts-dialog input[type="password"], .accounts-dialog textarea, .accounts-dialog .login-form input {
+form input[type="text"], 
+form input[type="password"],
+form textarea,
+form .login-form input,
+.accounts-dialog input[type="text"],
+.accounts-dialog input[type="password"],
+.accounts-dialog textarea,
+.accounts-dialog .login-form input {
   display: block;
-  padding: 5px 6px;
+  padding: 10px;
   width: 100%;
   font-size: 14px;
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
-
-  /*border: 1px solid #b5b0b0;*/
-  -webkit-transition: border-color 500ms;
-  -moz-transition: border-color 500ms;
-  -o-transition: border-color 500ms;
-  transition: border-color 500ms; }
+  background-color: #fff;
+border: 1px solid #e4e6e8;
+-webkit-transition: border linear .2s, box-shadow linear .2s;
+-moz-transition: border linear .2s, box-shadow linear .2s;
+-o-transition: border linear .2s, box-shadow linear .2s;
+transition: border linear .2s, box-shadow linear .2s;
+}
   /* line 68, ../sass/modules/_forms.scss */
   form input[type="text"]:focus, form input[type="password"]:focus, form textarea:focus, form .login-form input:focus, .accounts-dialog input[type="text"]:focus, .accounts-dialog input[type="password"]:focus, .accounts-dialog textarea:focus, .accounts-dialog .login-form input:focus {
-    outline: none;
-    border-color: #f36c3d;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(243, 108, 61, 0.3);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(243, 108, 61, 0.3);
-    box-shadow: 0px 0px 5px 0px rgba(243, 108, 61, 0.3); }
+    border-color: #c8cdd1;
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 6px #ffffff;
+-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 6px #ffffff;
+box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 6px #ffffff; }
 /* line 74, ../sass/modules/_forms.scss */
 form input[type="text"], form input[type="password"], form .login-form input, .accounts-dialog input[type="text"], .accounts-dialog input[type="password"], .accounts-dialog .login-form input {
   height: 30px;
@@ -1565,8 +1590,6 @@ input[type="submit"], button, .button, .auth-buttons #login-buttons #login-butto
   font-size: 16px;
   cursor: pointer;
   margin: 0;
-  line-height: 26px;
-  height: 26px;
   font-weight: normal; }
   /* line 110, ../sass/modules/_forms.scss */
   input[type="submit"].disabled, button.disabled, .button.disabled, .auth-buttons #login-buttons .disabled#login-buttons-password, .btn.disabled {
@@ -1611,7 +1634,8 @@ input[type="submit"], button, .button, .auth-buttons #login-buttons #login-butto
   /* line 2, ../sass/modules/_dialogs.scss */
   .dialog h2 {
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
+    padding-top: 20px;
     margin-bottom: 10px; }
 
 /* line 9, ../sass/modules/_dialogs.scss */
@@ -1722,7 +1746,9 @@ table {
   -moz-border-radius: 80px;
   -ms-border-radius: 80px;
   -o-border-radius: 80px;
-  border-radius: 80px; }
+  border-radius: 80px;
+  margin: auto;
+  margin-bottom: 15px;}
 
 /* line 1, ../sass/modules/_errors.scss */
 .error {
@@ -2072,16 +2098,17 @@ padding:20px;
 }
 
 header .grid{
-background:#2d72d9;
+background:#262932;
 height:70px;
 
 }
 
-header .grid .logo,
 header .grid .logo.image{
-left:-163px;
+left:20px;
 width:auto;
 }
+
+header .grid .logo{left: 20px; width: 100px; font-size: 20px; line-height: 24px; text-align: left;}
 
 .post-content{
 margin-right:0;
@@ -2104,10 +2131,6 @@ font-size: 10px;
 color: #b3c1c6;
 }
 
-.post-content .post-heading .post-title{
-font-size:14px;
-font-weight:bold;
-}
 
 .settings, .admin, .user-table{ position: relative;}
 
@@ -2116,7 +2139,14 @@ font-weight:bold;
 .admin .nav,
 .user-table .nav{
 position:absolute;
-left:-150px;
+left:-120px;
+}
+
+.posts .nav a,
+.settings .nav a,
+.admin .nav a,
+.user-table .nav a{
+font-weight: normal;
 }
 
 .posts .nav li,
@@ -2144,14 +2174,11 @@ border-bottom:1px solid #ddd;
 
 .submit.button,
 input[type="submit"], button, .button, .auth-buttons #login-buttons #login-buttons-password, .btn{
-padding: 5px 15px 10px 15px;
+padding: 10px 15px;
 margin-bottom: 0;
 border: 0;
 color: #FFF;
--webkit-border-radius: 3px;
--moz-border-radius: 3px;
-border-radius: 3px;
-font: 700 14px "Whitney SSm A","Whitney SSm B","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+font: bold 14px Source Sans Pro;
 -webkit-box-sizing: border-box;
 -moz-box-sizing: border-box;
 box-sizing: border-box;
@@ -2166,17 +2193,11 @@ margin-top:10px;
 }
 
 input[type="text"], input[type="email"], input[type="password"], textarea {
-padding: 10px 15px;
+padding: 10px 18px;
 margin-bottom: 0;
 background: #FFF;
 border: 1px solid #ddd;
--webkit-border-radius: 3px;
--moz-border-radius: 3px;
-border-radius: 3px;
--webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.1) inset;
--moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.1) inset;
--o-box-shadow: 1px 1px 1px rgba(0,0,0,0.1) inset;
-box-shadow: 1px 1px 1px rgba(0,0,0,0.1) inset;
+
 -webkit-transition: all 200ms ease;
 -moz-transition: all 200ms ease;
 -ms-transition: all 200ms ease;
@@ -2210,8 +2231,8 @@ form .control-group .controls .inline-link, .accounts-dialog .control-group .con
 	
 	.post-content .post-upvote .upvote-link{height: auto; display: inherit;float: none;}
 	.auth-buttons #login-buttons a.login-link-text{ font-size: 14px}
-	form.form-block, .accounts-dialog.form-block{background-color: #f1f1f1 }
-	h3{ color: #1c52a2;}
+	
+	h3{ color: #e44f32; font-size: 18px; line-height: 36px}
 .accounts-dialog{
 	box-shadow:none !important;
 	border-radius:10px !important;
@@ -2234,15 +2255,37 @@ form .control-group .controls .inline-link, .accounts-dialog .control-group .con
 	.single-post{background: white}
 	.single-post .sticky .post-message {padding: 20px 30px}
 	.single-post .post.sticky .post-content .post-info{ margin: 0;}
+	.comment {margin-left: 0;}
+	
+	.comment-content{padding-left: 0; padding-right: 0;}
 	ul.comment-list{padding: 30px}
-	.comment-actions{position: relative;}
+	.comment-actions{position: relative; left: 0; float: left; top: 0px;}
 	.comment-actions a {
-border-radius: none;
+		background: none;
+		width: auto;
+		height: auto;
+border-radius: 0;
 position: relative;
 display: block;
-color: black;
 box-shadow: none;
 overflow: hidden;
 text-indent: 0;
 white-space: nowrap;
+float: left;
 }
+.comment-actions a:hover{background: none;}
+
+.comment-actions > span{float: left; padding: 0 10px;}
+
+.user-profile .user-avatar {
+  margin: auto;
+  margin-bottom: 15px;}
+
+
+#login-buttons .login-button, .accounts-dialog .login-button {box-shadow:none;}
+
+.nocomments{padding: 0px 20px 20px;
+opacity: 0.5;}
+
+.login-text-and-button,
+#login-buttons .or{display: none;}
